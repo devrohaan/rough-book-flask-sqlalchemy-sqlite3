@@ -1,0 +1,21 @@
+ * Serving Flask app "Main" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [15/Jul/2018 16:51:50] "GET / HTTP/1.1" 200 -
+hi1
+hi1
+hi2
+2018-07-15 16:51:55,831 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1
+2018-07-15 16:51:55,831 INFO sqlalchemy.engine.base.Engine ()
+2018-07-15 16:51:55,833 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1
+2018-07-15 16:51:55,833 INFO sqlalchemy.engine.base.Engine ()
+2018-07-15 16:51:55,835 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2018-07-15 16:51:55,838 INFO sqlalchemy.engine.base.Engine SELECT users.id AS users_id, users.username AS users_username, users.fullname AS users_fullname, users.password AS users_password 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?
+2018-07-15 16:51:55,838 INFO sqlalchemy.engine.base.Engine ('cr7', 1, 0)
+127.0.0.1 - - [15/Jul/2018 16:51:55] "POST /FlaskTutorial HTTP/1.1" 200 -
